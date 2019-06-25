@@ -1,0 +1,64 @@
+2019-06-25 10:42:19 INFO  Person:44 - Invalid sex Hermafrodit for person: Lorenza Willms
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Lorenza, lastName=Willms, age=10, amountOfChildren=9, sex=HERMAFRODIT)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -8 for person: Lambert Harris
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Lambert, lastName=Harris, age=62, amountOfChildren=-8, sex=MALE)
+2019-06-25 10:42:19 INFO  Person:44 - Invalid sex Hermafrodit for person: Ottilie D'Amore
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Ottilie, lastName=D'Amore, age=58, amountOfChildren=2, sex=HERMAFRODIT)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -1 for person: Micheal Ratke
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Micheal, lastName=Ratke, age=24, amountOfChildren=-1, sex=FEMALE)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -5 for person: Kraig Veum
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Kraig, lastName=Veum, age=43, amountOfChildren=-5, sex=FEMALE)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -8 for person: Cade Wuckert
+2019-06-25 10:42:19 FATAL Person:51 - Invalid age -33 for person: Cade Wuckert
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Cade, lastName=Wuckert, age=-33, amountOfChildren=-8, sex=FEMALE)
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Ryley, lastName=Feeney, age=42, amountOfChildren=4, sex=FEMALE)
+2019-06-25 10:42:19 FATAL Person:51 - Invalid age -31 for person: Sigrid Mraz
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Sigrid, lastName=Mraz, age=-31, amountOfChildren=3, sex=FEMALE)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -4 for person: Isabel Cole
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Isabel, lastName=Cole, age=17, amountOfChildren=-4, sex=MALE)
+2019-06-25 10:42:19 WARN  Person:47 - Invalid amount of children -8 for person: Kayleigh Streich
+2019-06-25 10:42:19 FATAL Person:51 - Invalid age -1 for person: Kayleigh Streich
+2019-06-25 10:42:19 INFO  Person:53 - Person(firstName=Kayleigh, lastName=Streich, age=-1, amountOfChildren=-8, sex=FEMALE)
+2019-06-25 10:42:19 INFO  Person:57 - Person: Lorenza Willms has 9 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Lambert Harris has -8 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Ottilie D'Amore has 2 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Micheal Ratke has -1 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Kraig Veum has -5 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Cade Wuckert has -8 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Ryley Feeney has 4 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Sigrid Mraz has 3 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Isabel Cole has -4 children
+2019-06-25 10:42:19 INFO  Person:57 - Person: Kayleigh Streich has -8 children
+2019-06-25 10:42:19 INFO  Person:60 - 1 Person has 2 children
+2019-06-25 10:43:46 WARN  Person:47 - Invalid amount of children -7 for person: Adrienne Cormier
+2019-06-25 10:43:46 FATAL Person:51 - Invalid age -6 for person: Adrienne Cormier
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Adrienne, lastName=Cormier, age=-6, amountOfChildren=-7, sex=FEMALE)
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Alfred, lastName=Pouros, age=29, amountOfChildren=1, sex=FEMALE)
+2019-06-25 10:43:46 WARN  Person:47 - Invalid amount of children -8 for person: Delores Schulist
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Delores, lastName=Schulist, age=91, amountOfChildren=-8, sex=FEMALE)
+2019-06-25 10:43:46 WARN  Person:47 - Invalid amount of children -2 for person: Ashlee Leffler
+2019-06-25 10:43:46 FATAL Person:51 - Invalid age -37 for person: Ashlee Leffler
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Ashlee, lastName=Leffler, age=-37, amountOfChildren=-2, sex=FEMALE)
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Zaria, lastName=Smith, age=98, amountOfChildren=7, sex=FEMALE)
+2019-06-25 10:43:46 INFO  Person:44 - Invalid sex Hermafrodit for person: Ryleigh Stoltenberg
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Ryleigh, lastName=Stoltenberg, age=26, amountOfChildren=0, sex=HERMAFRODIT)
+2019-06-25 10:43:46 INFO  Person:44 - Invalid sex Hermafrodit for person: Jerry Kub
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Jerry, lastName=Kub, age=63, amountOfChildren=4, sex=HERMAFRODIT)
+2019-06-25 10:43:46 WARN  Person:47 - Invalid amount of children -5 for person: Tyrell Predovic
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Tyrell, lastName=Predovic, age=58, amountOfChildren=-5, sex=FEMALE)
+2019-06-25 10:43:46 INFO  Person:44 - Invalid sex Hermafrodit for person: Issac Legros
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Issac, lastName=Legros, age=13, amountOfChildren=8, sex=HERMAFRODIT)
+2019-06-25 10:43:46 INFO  Person:44 - Invalid sex Hermafrodit for person: Juanita Weber
+2019-06-25 10:43:46 FATAL Person:51 - Invalid age -8 for person: Juanita Weber
+2019-06-25 10:43:46 INFO  Person:53 - Person(firstName=Juanita, lastName=Weber, age=-8, amountOfChildren=0, sex=HERMAFRODIT)
+2019-06-25 10:43:46 INFO  Person:57 - Person: Adrienne Cormier has -7 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Alfred Pouros has 1 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Delores Schulist has -8 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Ashlee Leffler has -2 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Zaria Smith has 7 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Ryleigh Stoltenberg has 0 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Jerry Kub has 4 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Tyrell Predovic has -5 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Issac Legros has 8 children
+2019-06-25 10:43:46 INFO  Person:57 - Person: Juanita Weber has 0 children
+2019-06-25 10:43:46 INFO  Person:60 - 0 Persons have 2 children
