@@ -5,15 +5,15 @@ import homeWork2.Task3ChineseZodiac;
 import homeWork2.Task5SequentialSearch;
 import homeWork2.Task6StatisticalInformation;
 import homeWork2.Task7BubbleSort;
-import homeWork9.Person;
-import homeWork9.Sex;
+import homeWork8.Person;
+import homeWork8.Sex;
 import lombok.extern.log4j.Log4j2;
 
 import java.util.Random;
 
-import static homeWork9.Sex.FEMALE;
-import static homeWork9.Sex.HERMAFRODIT;
-import static homeWork9.Sex.MALE;
+import static homeWork8.Sex.FEMALE;
+import static homeWork8.Sex.HERMAFRODIT;
+import static homeWork8.Sex.MALE;
 
 @Log4j2
 public class Main {
