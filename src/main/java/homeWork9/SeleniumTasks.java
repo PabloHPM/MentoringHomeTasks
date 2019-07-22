@@ -6,7 +6,6 @@ import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Keys;
@@ -22,24 +21,16 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
-import java.io.IOException;
-import java.sql.Timestamp;
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -174,13 +165,15 @@ public class SeleniumTasks {
         for (int i = 0; i < 3; i++) {
             dimension = element.getSize();
             log.info(String.format("Default size Height : %d Width : %d", dimension.height, dimension.getWidth()));
-            resize(driver.findElement(By.cssSelector(".ui-resizable-handle.ui-resizable-se")), new Random().nextInt(400), new Random().nextInt(400));
+            resize(driver.findElement(By.cssSelector(".ui-resizable-handle.ui-resizable-se")),
+                   new Random().nextInt(400), new Random().nextInt(400));
             Thread.sleep(2000);
         }
     }
 
-    @Test @SneakyThrows
-    void elementsWorkAsDefined(){
+    @Test
+    @SneakyThrows
+    void elementsWorkAsDefined() {
         driver.get(DEMO_QA_URL.concat("/tooltip-and-double-click"));
 
         WebElement doubleClickBtn = driver.findElement(By.id("doubleClickBtn"));
@@ -202,7 +195,7 @@ public class SeleniumTasks {
     }
 
     @Test
-    void checkTooltip(){
+    void checkTooltip() {
         driver.get(DEMO_QA_URL.concat("/tooltip"));
 
         WebElement tooltip = driver.findElement(By.id("age"));
@@ -222,14 +215,15 @@ public class SeleniumTasks {
         log.info("Sliders’ current position :" + slider.findElement(By.cssSelector("span")).getLocation().toString());
 
         for (int i = 0; i < 3; i++) {
-            action.dragAndDropBy(slider, new Random().nextInt(500)-200, 0).build().perform();
-            log.info("Sliders’ current position :" + slider.findElement(By.cssSelector("span")).getLocation().toString());
+            action.dragAndDropBy(slider, new Random().nextInt(500) - 200, 0).build().perform();
+            log.info(
+                "Sliders’ current position :" + slider.findElement(By.cssSelector("span")).getLocation().toString());
             Thread.sleep(1000);
         }
     }
 
     @Test
-    void datePickerCheck(){
+    void datePickerCheck() {
         driver.get(DEMO_QA_URL.concat("/datepicker"));
         WebElement datepicker = driver.findElement(By.cssSelector(".hasDatepicker"));
         datepicker.sendKeys(randomDate());
@@ -238,17 +232,17 @@ public class SeleniumTasks {
     }
 
     @Test
-    void checkboxCheck(){
+    void checkboxCheck() {
         driver.get(DEMO_QA_URL.concat("/checkboxradio"));
 
-        List<WebElement> radioList = driver.findElements(By.cssSelector(".widget:nth-child(5) > fieldset:nth-child(3) > label"));
+        List<WebElement> radioList =
+            driver.findElements(By.cssSelector(".widget:nth-child(5) > fieldset:nth-child(3) > label"));
 
         for (int i = 0; i < radioList.size(); i++) {
             radioList.get(i).click();
-            List<Boolean> status = driver.findElements(By.cssSelector(".widget:nth-child(5) > fieldset:nth-child(3) > label"))
-                                     .stream()
-                                     .map(WebElement::isSelected)
-                                     .collect(Collectors.toList());
+            List<Boolean> status =
+                driver.findElements(By.cssSelector(".widget:nth-child(5) > fieldset:nth-child(3) > label")).stream()
+                      .map(WebElement::isSelected).collect(Collectors.toList());
             status.contains(true);
         }
 
@@ -260,14 +254,13 @@ public class SeleniumTasks {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDate startDate = LocalDate.of(2019, 8, 1);
         LocalDate endDate = LocalDate.of(2019, 8, 31);
-        long randomEpochDay = ThreadLocalRandom
-            .current()
-            .longs(startDate.toEpochDay(), endDate.toEpochDay()).findAny().getAsLong();
+        long randomEpochDay =
+            ThreadLocalRandom.current().longs(startDate.toEpochDay(), endDate.toEpochDay()).findAny().getAsLong();
         return LocalDate.ofEpochDay(randomEpochDay).format(formatter);
     }
 
     @SneakyThrows
-    private void takeScreenShot(){
+    private void takeScreenShot() {
         File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screen, new File(
             "screenshot\\".concat(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")).concat(".png"))));
