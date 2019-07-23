@@ -262,8 +262,8 @@ public class SeleniumTasks {
     @SneakyThrows
     private void takeScreenShot() {
         File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screen, new File(
-            "screenshot\\".concat(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")).concat(".png"))));
+        String name = String.format("screenshot\\%s.png", LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+        FileUtils.copyFile(screen, new File(name));
     }
 
     private void resize(WebElement elementToResize, int xOffset, int yOffset) {

@@ -1,5 +1,6 @@
 import com.github.javafaker.Faker;
 import homeWork1.QuadraticEquation;
+import homeWork2.Tas4Converter;
 import homeWork2.Task1PrimeNumbers;
 import homeWork2.Task3ChineseZodiac;
 import homeWork2.Task5SequentialSearch;
@@ -29,11 +30,12 @@ public class Main {
             case 2:
                 new Task1PrimeNumbers(0, 50);
                 new Task3ChineseZodiac(2000);
+                new Tas4Converter(1355);
                 new Task5SequentialSearch(3, 10);
                 new Task6StatisticalInformation(10);
                 new Task7BubbleSort(10);
                 break;
-            case 9:
+            case 8:
                 personGenerator();
                 break;
             default:
