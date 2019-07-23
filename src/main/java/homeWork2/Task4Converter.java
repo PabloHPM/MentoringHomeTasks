@@ -6,7 +6,7 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 @Log4j2
-public class Tas4Converter {
+public class Task4Converter {
     private static String unitsArray[] =
         {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve",
          "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
@@ -14,7 +14,7 @@ public class Tas4Converter {
     private static String tensArray[] =
         {"zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
 
-    public Tas4Converter(int value) {
+    public Task4Converter(int value) {
         log.info("Number: "+numberToWord(value));
     }
 
