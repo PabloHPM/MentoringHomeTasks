@@ -262,7 +262,7 @@ public class SeleniumTasks {
     @SneakyThrows
     private void takeScreenShot() {
         File screen = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String name = String.format("screenshot\\%s.png", LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss")));
+        String name = String.format("screenshot\\%s.png", LocalTime.now().format(DateTimeFormatter.ofPattern("HH_mm_ss")));
         FileUtils.copyFile(screen, new File(name));
     }
 
